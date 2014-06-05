@@ -1,8 +1,11 @@
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/dist/*,*/node_modules/*,*/vendor/*
 
+set mouse=a
+set ttym=xterm2
+
 let &t_Co=256
-colorscheme molokai
-" syntax on
+colorscheme solarized
+set background=dark
 
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
