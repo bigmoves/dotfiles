@@ -1,0 +1,22 @@
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/dist/*,*/node_modules/*,*/vendor/*
+
+let &t_Co=256
+colorscheme molokai
+" syntax on
+
+au BufNewFile,BufRead *.es6 set filetype=javascript
+
+let g:ctrlp_working_path_mode = 0
+
+" put useful info in status bar
+set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+
+" hint to keep lines short
+if exists('+colorcolumn')
+  set colorcolumn=80
+endif
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
